@@ -162,7 +162,7 @@
               Opensea
               </a>
               <hr>
-              <img src="https://meta.makotodigital.art/mp4image/<%=countDown %>.png" />
+              <img src="https://meta.makotodigital.art/mp4image/<%=countDown %>.png" class="img-fluid"/>
             </div>
           </div>
         </div>
