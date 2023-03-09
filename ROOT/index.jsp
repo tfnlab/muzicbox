@@ -99,73 +99,20 @@
             <div class="form-group">
           <label for="popular-meme-subjects">Select a Popular Meme Subject:</label>
           <select name="popular_meme_subjects" id="popular_meme_subjects" class="form-control" >
-            <option value="select_subject">Select Subject</option>
-            <option value="pepe">Pepe</option>
-            <option value="moonbirds">Moonbirds</option>
-            <option value="cryptoads">Cryptoads</option>
-            <option value="mfernft">Mfer</option>
-            <option value="doge">Doge</option>
-            <option value="grumpy-cat">Grumpy Cat</option>
-            <option value="bad-luck-brian">Bad Luck Brian</option>
-            <option value="distracted-boyfriend">Distracted Boyfriend</option>
-            <option value="success-kid">Success Kid</option>
-            <option value="drake-hotline-bling">Drake Hotline Bling</option>
-            <option value="woman-yelling-at-a-cat">Woman Yelling at a Cat</option>
-            <option value="surprised-pikachu">Surprised Pikachu</option>
-            <option value="this-is-fine">This is Fine</option>
-            <option value="rickroll">Rickroll</option>
-            <option value="expanding-brain">Expanding Brain</option>
-            <option value="the-dress">The Dress</option>
-            <option value="hide-the-pain-harold">Hide the Pain Harold</option>
-            <option value="y-u-no">Y U No</option>
-            <option value="shut-up-and-take-my-money">Shut Up and Take My Money</option>
-            <option value="aliens-guy">Aliens Guy</option>
-            <option value="two-buttons">Two Buttons</option>
-            <option value="ight-imma-head-out">Ight Imma Head Out</option>
-            <option value="arthur-fist">Arthur Fist</option>
-            <option value="drake_hotline_bling">Drake Hotline Bling</option>
-            <option value="pikachu_surprised">Pikachu Surprised</option>
-            <option value="kermit-tea">Kermit Tea</option>
-            <option value="crying-cat">Crying Cat</option>
-            <option value="confused-mr-krabs">Confused Mr. Krabs</option>
-            <option value="dank-meme">Dank Meme</option>
-            <option value="mocking-spongebob">Mocking Spongebob</option>
-            <option value="evil-toddler">Evil Toddler</option>
-            <option value="travolta-confused">Travolta Confused</option>
-            <option value="distracted-puppy">Distracted Puppy</option>
-            <option value="gru-plan">Gru Plan</option>
-            <option value="karen">Karen</option>
-            <option value="roll-safe">Roll Safe</option>
-            <option value="wait-thats-illegal">Wait, That's Illegal</option>
-            <option value="spongebob-imagination">Spongebob Imagination</option>
-            <option value="savage-patrick">Savage Patrick</option>
-            <option value="you-know-i-had-to-do-it-to-em">You Know I Had to Do It to Em</option>
-            <option value="mr-bean">Mr. Bean</option>
-            <option value="the-most-interesting-man-in-the-world">The Most Interesting Man in the World</option>
-            <option value="bad-joke-eel">Bad Joke Eel</option>
-            <option value="change-my-mind">Change My Mind</option>
-            <option value="HODL">HODL</option>
-            <option value="To the Moon">To the Moon</option>
-            <option value="Lambo">Lambo</option>
-            <option value="Buy the Dip">Buy the Dip</option>
-            <option value="Diamond Hands">Diamond Hands</option>
-            <option value="FOMO">FOMO</option>
-            <option value="FUD">FUD</option>
-            <option value="Shiba Inu Coin">Shiba Inu Coin</option>
-            <option value="NFT">NFT</option>
-            <option value="Gas Fees">Gas Fees</option>
-            <option value="Smart Contracts">Smart Contracts</option>
-            <option value="DeFi">DeFi</option>
-            <option value="Crypto Winter">Crypto Winter</option>
-            <option value="Bitcoin Pizza">Bitcoin Pizza</option>
-            <option value="Crypto Kitties">Crypto Kitties</option>
-            <option value="Satoshi Nakamoto">Satoshi Nakamoto</option>
-            <option value="Whale Watching">Whale Watching</option>
-            <option value="Rug Pull">Rug Pull</option>
-            <option value="Hype Coin">Hype Coin</option>
-            <option value="Moonshot">Moonshot</option>
-            <option value="Bitcoin Ordinals">Bitcoin Ordinals</option>
-            <option value="Metaverse">Metaverse</option>
+            <option value="select_subject">Select Type</option>
+            <%
+            String[] music_loops = { "Drum loop", "Bassline loop", "Melodic loop",
+                                     "Chord progression loop", "Arpeggio loop", "Vocal loop",
+                                     "FX loop", "Percussion loop", "Top loop", "Breakbeat loop",
+                                     "drum stem", "bass stem", "melody stem", "vocal stem",
+                                     "pads/atmospheres stem", "fx stem", "Blues riff",
+                                     "Rock riff", "Metal riff", "Funk riff", "Jazz riff",
+                                     "Reggae riff", "Hip-hop riff", "Pop riff", "Country riff" };
+
+            %>
+            <% for (String loop : music_loops) { %>
+              <option value="<%= loop %>"><%= loop %></option>
+            <% } %>
           </select>
           </div>
 
