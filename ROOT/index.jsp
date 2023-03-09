@@ -172,7 +172,7 @@
           <button type="submit" class="btn btn-primary">Create Meme</button>
         </form>
         <HR>
-        <!--<small><%=ocrDescription%></small>-->
+        <small><%=ocrDescription%></small>
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
               File newimage = new File(dirPath + uuid + ".png");
