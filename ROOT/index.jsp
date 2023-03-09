@@ -97,7 +97,7 @@
         <form method="POST" action="index.jsp">
 
             <div class="form-group">
-          <label for="popular-meme-subjects">Select a Popular Meme Subject:</label>
+          <label for="popular-meme-subjects">Select Type (Loop, Riff or Stem):</label>
           <select name="popular_meme_subjects" id="popular_meme_subjects" class="form-control" >
             <option value="select_subject">Select Type</option>
             <%
@@ -118,7 +118,7 @@
 
           <HR>
           <div class="form-group">
-            <label for="meme-text">Enter the topic for your meme: (NFT, Degen, WAGMI ...)</label>
+            <label for="meme-text">Enter the text for your music: (i.e. Style of Eric Clapton)</label>
             <input type="text" class="form-control" id="meme_text" name="meme_text" required>
           </div>
           <HR>
@@ -128,42 +128,7 @@
         <small><%=ocrDescription%></small>
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
-              File newimage = new File(dirPath + uuid + ".png");
-
-              if (newimage.exists()) {
-                %>
-                <!--<small><%=ocrDescription%></small>-->
-                      <HR>
-                      <div class="jumbotron">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-md-6 offset-md-3 text-center">
-                              <a href="index.meme.jsp?meme_id=<%=uuid %>" >
-                              <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>" class="img-fluid">
-                              </a>
-                              <h1><%=uuid %></h1>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <HR>
-
-                <%
-              } else {
-                %>
-                Listen up, my friend. This is a delicate process we've got going on here. We've hit a few snags while trying to bring your artistic vision to life, but don't you worry. We didn't get to where we are today by throwing in the towel at the first sign of trouble. No sir, we're made of sterner stuff than that.
-                <BR>
-                <BR>
-
-                So, here's what you gotta do. Just <b>click</b> that <b>refresh</b> button like your life depends on it. Give it another shot, see if that fixes things up. And if it doesn't, well, then you gotta get a little creative. <b>Change the wording up a bit</b>, switch things around, see if that helps.
-                <BR>
-                <BR>
-
-                We're in this together, you and me. We're not gonna let a little setback stop us from achieving greatness. No way, no how. So let's saddle up and ride this thing out, come hell or high water. Yeehaw!
-                <BR>
-                <BR>
-                <%
-              }
+              %>The MuzicBox is Working on your Request <%
            }else{
              %><HR><%
            }
