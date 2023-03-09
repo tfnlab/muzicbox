@@ -123,13 +123,15 @@
             <input type="text" class="form-control" id="meme_text" name="meme_text" required>
           </div>
           <HR>
-          <button type="submit" class="btn btn-primary">Create Meme</button>
+          <button type="submit" class="btn btn-primary">Create</button>
         </form>
         <HR>
         <small><%=ocrDescription%></small>
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
-              %>The MuzicBox is Working on your Request <%
+              %>The MuzicBox is Working on your Request
+                <HR>
+              <%
            }else{
              %><HR><%
            }
@@ -160,7 +162,7 @@
               Opensea
               </a>
               <hr>
-              <img href="https://meta.makotodigital.art/mp4image/<%=countDown %>.png" />
+              <img src="https://meta.makotodigital.art/mp4image/<%=countDown %>.png" />
             </div>
           </div>
         </div>
