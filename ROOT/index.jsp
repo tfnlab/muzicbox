@@ -129,7 +129,11 @@
         <small><%=ocrDescription%></small>
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
-              %>The MuzicBox is Working on your Request
+              %>
+                <HR>
+                The MuzicBox is Working on your Request
+                <HR>
+                We have received your request to create an audio file, please be patient as this is a delicate process and it may take up to a minute to generate the file. If there were no errors, you can check back in a minute and the audio file will be listed here. Thank you for choosing our service.
                 <HR>
               <%
            }else{
