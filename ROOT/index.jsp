@@ -57,10 +57,16 @@
             meme_text += " " + request.getParameter("popular_meme_subjects") ;
           }
           try{
-               Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/aigl.w.py", "'" + meme_text + "'", uuid).start();
-               String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
-               String stdout = IOUtils.toString(pweb3.getInputStream(), Charset.defaultCharset());
-               ocrDescription = stdout + stderr + " MEME " ;
+//               Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/aigl.w.py", "'" + meme_text + "'", uuid).start();
+//               String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
+//               String stdout = IOUtils.toString(pweb3.getInputStream(), Charset.defaultCharset());
+//               ocrDescription = stdout + stderr + " MEME " ;
+
+               File file = new File(ac.getPdfloc() + "mr/" + "rm." + uuid.toString() + ".txt");
+               FileWriter fw = new FileWriter(file);
+               BufferedWriter bw = new BufferedWriter(fw);
+               bw.write(meme_text);
+               bw.close();
 
            }catch(IOException ex){
                ocrDescription = ex.getMessage();
