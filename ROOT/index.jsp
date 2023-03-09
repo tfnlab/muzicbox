@@ -159,6 +159,8 @@
               <a href="https://opensea.io/assets/ethereum/0xac1e192a284d54f442d97bee44256eef7425d7a1/<%=countDown %>" >
               Opensea
               </a>
+              <hr>
+              <img href="https://meta.makotodigital.art/mp4image/<%=countDown %>.png" />
             </div>
           </div>
         </div>
