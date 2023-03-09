@@ -85,13 +85,7 @@
         });
         %>
         <HR>
-        Ladies and gentlemen, we've got ourselves a number. And it's not just any old number, no sir. It's the Total Number of Memes Created - a mind-boggling <B><%=files.length%></B>!
-
-        This number may seem insignificant to the untrained eye, but to the true meme connoisseur, it represents a veritable gold mine of comedic genius. With every new meme created, a spark of inspiration is born, a flame of laughter that spreads like wildfire through the digital world.
-
-        So, my dear friends, whether you're a seasoned veteran of the meme game or a fresh-faced newcomer, take heed of this number. It's not just a number - it's a statement, a challenge, a call to arms. Will you be the one to create the <B><%=files.length +1%></B> meme? The <B><%=files.length +2%></B>? The 10,000th?
-
-        The choice is yours, my friends. <a href="https://mint.memegenesis.com">Mint</a> or <a href="https://opensea.io/collection/meme-genesis-1">Buy</a>, create or consume - the world of memes is waiting for you. So what are you waiting for? Let's get memeing!
+          Unleashing creativity with every loop: <B><%=files.length%></B> amount of loop riffs and stems created.
         <HR>
 
         <form method="POST" action="index.jsp">
