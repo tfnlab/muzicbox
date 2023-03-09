@@ -186,13 +186,13 @@
   </footer>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HH16PDS3VF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VPBKWMBT3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-HH16PDS3VF');
+    gtag('config', 'G-1VPBKWMBT3');
   </script>
 </body>
 </html>
