@@ -154,9 +154,9 @@
               </a>
               <h5 class="card-title mt-3">NFT #<%=countDown%></h5>
               <HR>
-              <a href="https://meta.makotodigital.art/music/<%=countDown %>.mid" controls>Download Mid</a>
-              <HR>
-              <a href="https://meta.makotodigital.art/mp3/<%=countDown %>.mp3" controls>Download Mp3</a>
+              Download
+              <a href="https://meta.makotodigital.art/music/<%=countDown %>.mid" controls>Mid</a>
+              <a href="https://meta.makotodigital.art/mp3/<%=countDown %>.mp3" controls> Mp3</a>
               <HR>
               <a href="https://opensea.io/assets/ethereum/0xac1e192a284d54f442d97bee44256eef7425d7a1/<%=countDown %>" >
               Opensea
