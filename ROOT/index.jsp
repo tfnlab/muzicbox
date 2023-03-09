@@ -51,6 +51,7 @@
         String ocrDescription = "";
 
 
+        APIConfig conf = new APIConfig();
         // Validate form data
         if (meme_text != null && meme_text.trim().length() > 0) {
           if(!request.getParameter("popular_meme_subjects").equals("select_subject")){
@@ -62,7 +63,7 @@
 //               String stdout = IOUtils.toString(pweb3.getInputStream(), Charset.defaultCharset());
 //               ocrDescription = stdout + stderr + " MEME " ;
 
-               File file = new File(ac.getPdfloc() + "mr/" + "rm." + uuid.toString() + ".txt");
+               File file = new File(conf.getPdfloc() + "mr/" + "rm." + uuid.toString() + ".txt");
                FileWriter fw = new FileWriter(file);
                BufferedWriter bw = new BufferedWriter(fw);
                bw.write(meme_text);
@@ -73,7 +74,6 @@
            }
 
         }
-        APIConfig conf = new APIConfig();
 
         // Get the directory path and list all PNG files
         String dirPath = conf.getPdfloc() +  "../img/mp4/";
