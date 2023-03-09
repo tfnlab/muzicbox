@@ -8,7 +8,7 @@
 <html>
 <head>
 
-<title>Meme Genesis</title>
+<title>MuzicBox.xyz</title>
 <meta name="description" content="Meme Genesis is a website that provides a collection of the latest and most popular memes on the internet. Our website is updated daily with new memes, and we have a community section where users can submit their own memes. Join us to stay up-to-date with the funniest memes on the web!">
 <meta name="keywords" content="meme, memes, funny memes, internet memes, viral memes, popular memes, meme collection, meme community, submit memes">
 
@@ -23,19 +23,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="index.jsp">Meme Genesis</a>
+      <a class="navbar-brand" href="index.jsp">MuzicBox.xyz</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="https://mint.memegenesis.com">Mint</a>
+          <a class="nav-link" href="https://muzicbox.makotodigital.art/">Mint</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.rank.jsp">Ranking</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://app.manifold.xyz/c/jesuspepe">Jesus Pepe</a>
+          <a class="nav-link" href="https://opensea.io/collection/muzicbox">OpenSea</a>
         </li>
       </ul>
       <!--
@@ -48,7 +42,7 @@
   </nav>
 
   <div class="container mt-5">
-      <h4>The Art of Meme</h4>
+      <h4>The Muzic Box</h4>
 
     <%
         // Create an instance of the APIConfig class
@@ -76,11 +70,11 @@
         APIConfig conf = new APIConfig();
 
         // Get the directory path and list all PNG files
-        String dirPath = conf.getPdfloc() +  "../img/";
+        String dirPath = conf.getPdfloc() +  "../img/mp4/";
         File dir = new File(dirPath);
         File[] files = dir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
-                return name.toLowerCase().endsWith(".png");
+                return name.toLowerCase().endsWith(".mp4");
             }
         });
 
@@ -238,17 +232,15 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
-              <%if(request.getParameter("animationStop")!=null){%>
-              <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
-              <%}else{%>
-              <img class="card-img-top" src="img.jsp?filetype=png&filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
-              <%}%>
-              </a>
+              <a href="index.meme.jsp?mb_id=<%=file.getName().replaceAll("\\.mp4$", "") %>" >
 
+              <div class="col-md-8 mx-auto">
+                <video src="https://meta.makotodigital.art/mp4/<%=file.getName()%>" class="w-100" controls></video>
+              </div>
+              </a>
               <h5 class="card-title mt-3">NFT #<%=countDown%></h5>
               <HR>
-              <a href="https://opensea.io/assets/ethereum/0x06941cddc03f45ff77817b40f472770a9a730aec/<%=countDown %>" >
+              <a href="https://opensea.io/assets/ethereum/0xac1e192a284d54f442d97bee44256eef7425d7a1/<%=countDown %>" >
               Opensea
               </a>
             </div>
