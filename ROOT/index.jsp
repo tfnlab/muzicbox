@@ -146,12 +146,10 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <a href="index.meme.jsp?mb_id=<%=file.getName().replaceAll("\\.mp4$", "") %>" >
 
               <div class="col-md-8 mx-auto">
                 <video src="https://meta.makotodigital.art/mp4/<%=file.getName()%>" class="w-100" controls></video>
               </div>
-              </a>
               <h5 class="card-title mt-3">NFT #<%=countDown%></h5>
               <HR>
               Download
