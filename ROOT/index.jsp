@@ -151,7 +151,7 @@
               </a>
               <h5 class="card-title mt-3">NFT #<%=countDown%></h5>
               <HR>
-              <a href="https://meta.makotodigital.art/mp4/<%=countDown %>".mid >
+              <a href="https://meta.makotodigital.art/music/<%=countDown %>.mid" >
               Mid File
               </a>
               <HR>
