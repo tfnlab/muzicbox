@@ -57,7 +57,7 @@
             meme_text += " " + request.getParameter("popular_meme_subjects") ;
           }
           try{
-               Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/meme.py", "'" + meme_text + "'", uuid).start();
+               Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/aigl.py", "'" + meme_text + "'", uuid).start();
                String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
                String stdout = IOUtils.toString(pweb3.getInputStream(), Charset.defaultCharset());
                ocrDescription = stdout + stderr + " MEME " ;
@@ -172,7 +172,6 @@
           <button type="submit" class="btn btn-primary">Create Meme</button>
         </form>
         <HR>
-          <a href="index.jsp?animationStop=true" >Animate</a>
         <!--<small><%=ocrDescription%></small>-->
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
