@@ -146,7 +146,7 @@
       <% int countDown = files.length -1; %>
       <% for (File file : files) { %>
         <% count += 1; %>
-        <%if(count<30 || request.getParameter("showall")!=null){%>
+        <%if(count<29 || request.getParameter("showall")!=null){%>
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
